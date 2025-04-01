@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let username = "Fritz";
+
+        // while(username === " "){
+        //     console.log("You didnt put username");
+        // }
+
+        // console.log(`Hello ${username}`);
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        // let username = "";
+        
+        // while(username === "" || username === null){ // the null is for you cannot cancel the window prompt without putting usernamew
+        //     username = window.prompt("Enter Username"); // YOU CANNOT STOP THE PROMT UNTIL YOU PUT A USERNMAE ON IT
+        // }
+        // console.log(`Hello ${username}`);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        let LoggedIn = false;
+        let username;
+        let password;
+
+        while(!LoggedIn){
+            username = window.prompt("Enter Username: ")
+            password = window.prompt("Enter Password: ")
+
+            if(username ==="myUsername" && password ==="myPassword"){
+                LoggedIn = true;
+                console.log("You are Logged In");
+            }else{
+                console.log("Invalid credentials")
+            }
+        }
+
+
+
+    </script>
+</body>
+</html>
