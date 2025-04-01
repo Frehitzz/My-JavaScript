@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="subs">
+    <label for="subs">Subscribe</label><br><br>
+
+    <input type="radio" id="Paypal" name="payment">
+    <label for="Paypal">Paypal</label><br>
+    <input type="radio" id="Gcash" name="payment">
+    <label for="Gcash">Gcash</label><br>
+    <input type="radio" id="Paymaya" name="payment">
+    <label for="Paymaya">Paymaya</label><br><br>
+    <button onclick="submit()">Submit</button>
+    <h3 id="subresult"></h3>
+    <h3 id="paymentresult"></h3>
+
+    <script>
+        const subs = document.getElementById("subs");
+        const Paypal = document.getElementById("Paypal");
+        const Gcash = document.getElementById("Gcash");
+        const Paymaya = document.getElementById("Paymaya");
+        const subresult = document.getElementById("subresult");
+        const paymentresult = document.getElementById("paymentresult");
+
+        function submit(){
+            if(subs.checked){
+                subresult.textContent = "You are subscribed";
+            }else{
+                subresult.textContent = "You are NOT subscribed";
+            }
+
+            if(Paypal.checked){
+                paymentresult.textContent = "Payment method: Paypal";
+            } else if(Gcash.checked){
+                paymentresult.textContent = "Payment method: Gcash";
+            } else if(Paymaya.checked){
+                paymentresult.textContent = "Payment method: Paymaya";
+            } else{
+                paymentresult.textContent = "Please choose a payment method";
+            }
+
+    }
+    </script>
+</body>
+</html>

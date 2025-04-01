@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+    // string methods = allow you to manipulate and work with text 
+    
+    let name = "Fritz";
+
+    console.log(name.charAt(0)); // get the index 0 which output the letter F of the name
+    console.log(name.indexOf("z")); // it finds what index of z
+    console.log(name.length); // count how many lettes including spaces it start with 1 when counting 
+    
+    // let surname = "Degamo   "; // there are space after
+    // let middlename = "Gervacio"
+    // console.log(surname.trim()); // remove all the spaces
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    let dogname = "Saber";
+    let catname = "Mikay";
+
+    console.log(dogname.toUpperCase()+ " " + catname.toUpperCase()); // make the letters Uppercasse
+    console.log(dogname.toLowerCase()+ " " + catname.toLowerCase()); // make the letters smallcase
+
+    console.log(dogname.repeat(5)); // repeat the string and you can choose how many it repeat
+
+    let color = "Blue"; // it have space before the letter
+    console.log(color.startsWith(" ")); // check if the color start with space, return true or false
+    console.log(color.startsWith("B")); // check if the color start with letter B
+
+    let result = color.startsWith(" ") ? console.log("It starts with space") : console.log("Its NOT start with spce");
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    console.log(color.endsWith("e")); // check it the color ends with e
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    let fullname = "Fritz Harly G. Degamo";
+    console.log(fullname.includes(" "));
+
+    let result3 = fullname.includes(" ") ? "The fullname have spaces" : "It does not have space";
+    console.log(result3);
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    let phoneNum = "123-456-789";
+
+    phoneNum = phoneNum.replaceAll("-","/"); // in the leftside ayan yung kung ano papalitan tas rightside ayun yung kung ano ipapalit
+    console.log(phoneNum); // output: 123 456 789
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    phoneNum = phoneNum.padStart(15,"0"); // 15 - is kung ilang string lang ang max tas yung 0 is papalit sa kulang if yung string ay hindi umabot sa max
+    console.log(phoneNum)
+    // you can also use .padEnd()
+
+    
+
+    </script>
+</body>
+</html>

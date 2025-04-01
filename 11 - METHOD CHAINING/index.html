@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // NO method chaining
+        let username = window.prompt();
+        // let trimmed = username.trim(0);
+        // let upper = trimmed.charAt();
+        // upper = upper.toUpperCase();
+
+        // let extraChars = username.slice(1);
+        // let result = extraChars.toLowerCase();
+        // username = upper + result;
+
+        // console.log(username);
+
+        // WITH METHOD CHAINING = pwede mo pagsama samahin mga method sa isang line at pwede ka ding gumamit ng concatenation
+        username = username.trim().charAt(0).toUpperCase() + username.slice(1).toLowerCase();
+        console.log(username);
+
+
+    </script>
+</body>
+</html>
